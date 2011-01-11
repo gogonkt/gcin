@@ -1159,7 +1159,7 @@ void wildcard()
 
   ClrSelArea();
   clr_seltab();
-  /* printf("wild %d %d %d %d\n", ggg.inch[0], ggg.inch[1], ggg.inch[2], ggg.inch[3]); */
+  printf("wild %d %d %d %d\n", ggg.inch[0], ggg.inch[1], ggg.inch[2], ggg.inch[3]);
   ggg.defselN=0;
   char regstr[32];
   int regstrN=0;
@@ -1463,6 +1463,7 @@ shift_proc:
       break;
     case XK_KP_Enter:
     case XK_Return:
+  printf("Enter status: %d %d %d %d %d\n", ggg.inch[0], ggg.inch[1], ggg.inch[2], ggg.inch[3], ggg.inch[4]);
       if (AUTO_SELECT_BY_PHRASE) {
 		if (shift_m) {
 		  return save_gtab_buf_shift_enter();

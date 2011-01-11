@@ -1010,7 +1010,7 @@ int gcin_switch_keys_lookup(int key);
 // return TRUE if the key press is processed
 gboolean ProcessKeyPress(KeySym keysym, u_int kev_state)
 {
-#if 0
+#if 1
   dbg("key press %x %x\n", keysym, kev_state);
 #endif
   check_CS();
